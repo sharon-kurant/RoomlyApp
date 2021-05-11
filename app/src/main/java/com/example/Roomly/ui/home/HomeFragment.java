@@ -26,7 +26,7 @@ import com.google.android.material.snackbar.Snackbar;
 
 public class HomeFragment extends Fragment {
 
-    int i = 0;
+    int i = 10;
     private HomeViewModel homeViewModel;
     private RecyclerView billsRecView, choresRecView;
     private Button choresBtn, billsBtn, deleteBtn, editBtn;
