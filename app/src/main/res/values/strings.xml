@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">Roomly</string>
+    <string name="title_activity_profile_navigation">ProfileNavigationActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Ross Geller</string>
+    <string name="nav_header_subtitle">RossGeller@gmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_notifications">Notifications</string>
+    <string name="choose_chore_or_bill">Choose chore or bill</string>
+    <string name="bill_name">Bill Name</string>
+    <string name="my_bill">my Bill</string>
+    <string name="amount">$$$</string>
+    <string name="due_date">03/05/21</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="chore_name">Chore Name</string>
+    <string name="inviteBtn">Invite new roommate</string>
+    <string name="removeBtn">Remove</string>
+    <string name="menu_roommates">Roommates</string>
+    <string name="cancel_invite">Cancel</string>
+    <string name="send_invite">Send</string>
+    <string name="insert_email">Insert email to invite</string>
+    <string name="email">email</string>
+    <string name="reminder_name">reminder name</string>
+    <string name="add_new_reminder">Add new reminder</string>
+    <string name="edit_due_date">due date</string>
+    <string name="price">price</string>
+    <string name="ok">OK</string>
+    <string name="cancel">CANCEL</string>
+    <string name="ui_profile_name_title">Name</string>
+    <string name="ui_profile_name_hint">Ross Geller</string>
+    <string name="ui_profile_email_title">Email</string>
+    <string name="ui_profile_email_hint">RossGeller@gmail.com</string>
+    <string name="prompt_password">Password</string>
+    <string name="ui_profile_password_hint">123</string>
+    <string name="ui_profile_phone_title">Phone</string>
+    <string name="ui_profile_phone_hint">+972 50 123 4567</string>
+    <string name="group_name">Group Name</string>
+    <string name="our_nice_flat">Freinds4Life</string>
+    <string name="ui_profile_gender_title">Gender</string>
+    <string name="ui_profile_gender_female">Female</string>
+    <string name="ui_profile_gender_male">Male</string>
+    <string name="ui_profile_gender_other">Other</string>
+    <string name="ui_button_sign_up_title">Sign up</string>
+    <string name="rossEmail">rossgeller@gmail.com</string>
+    <string name="rossPass">123</string>
+</resources>

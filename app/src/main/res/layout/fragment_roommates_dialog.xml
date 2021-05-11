@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".RoommatesDialog"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="@string/insert_email"
+            android:textColor="#000"
+            android:textSize="24dp" />
+
+        <EditText
+            android:id="@+id/input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/heading"
+            android:layout_marginBottom="20dp"
+            android:background="@null"
+            android:hint="@string/email"
+            android:textColor="#000" />
+
+        <Button
+            android:id="@+id/cancel_invite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/input"
+            android:backgroundTint="#FFC004"
+            android:text="@string/cancel_invite"
+            />
+
+        <Button
+            android:id="@+id/send_invite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input"
+            android:layout_alignEnd="@id/cancel_invite"
+            android:layout_alignParentEnd="true"
+            android:backgroundTint="#ffc004"
+            android:text="@string/send_invite"
+            />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
