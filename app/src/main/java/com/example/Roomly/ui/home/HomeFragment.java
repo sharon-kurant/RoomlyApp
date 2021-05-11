@@ -26,6 +26,7 @@ import com.google.android.material.snackbar.Snackbar;
 
 public class HomeFragment extends Fragment {
 
+    int i = 0;
     private HomeViewModel homeViewModel;
     private RecyclerView billsRecView, choresRecView;
     private Button choresBtn, billsBtn, deleteBtn, editBtn;
@@ -43,26 +44,18 @@ public class HomeFragment extends Fragment {
         billsRecView = root.findViewById(R.id.billsRecView);
         choresRecView = root.findViewById(R.id.choresRecView);
         fab = root.findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (choresRecView.getVisibility() == View.VISIBLE){
-                    AddReminderDialog dialog = new AddReminderDialog(false);
-                    dialog.show(getParentFragmentManager(),"AddReminderDialog");
-                } else if (billsRecView.getVisibility() == View.VISIBLE){
-                    AddReminderDialog dialog = new AddReminderDialog(true);
-                    dialog.show(getParentFragmentManager(),"AddReminderDialog");
-                }else
-                    Snackbar.make(view, "Choose Bills or Chores to add new reminder", Snackbar.LENGTH_LONG).show();
+        fab.setOnClickListener(view -> {
+            if (choresRecView.getVisibility() == View.VISIBLE){
+                AddReminderDialog dialog = new AddReminderDialog(false);
+                dialog.show(getParentFragmentManager(),"AddReminderDialog");
+            } else if (billsRecView.getVisibility() == View.VISIBLE){
+                AddReminderDialog dialog = new AddReminderDialog(true);
+                dialog.show(getParentFragmentManager(),"AddReminderDialog");
+            }else
+                Snackbar.make(view, "Choose Bills or Chores to add new reminder", Snackbar.LENGTH_LONG).show();
 
-            }
         });
-        homeViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
-            @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
-            }
-        });
+        homeViewModel.getText().observe(getViewLifecycleOwner(), s -> textView.setText(s));
 
         //Generate bill recycler
 
